@@ -1,0 +1,5 @@
+=OpenID Sequel Store
+
+A store is required by an OpenID server and optionally by the consumer to store associations, nonces, and auth key information across requests and processes.  If rails is distributed across several machines, they must must all have access to the same OpenID store data, so the FilesystemStore won't do.
+
+This directory contains a plugin for connecting your OpenID enabled rails app to a Sequel based OpenID store. It's inspired by "Active Record OpenID Store Plugin" by Dag Arneson and distributed as an example inside Ruby-OpenID itself.
